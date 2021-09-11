@@ -1,0 +1,84 @@
+.movieCard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: auto;
+  padding: 10px 5px 30px 5px;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.24);
+}
+
+.button {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.733);
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.616);
+  border-radius: 3px;
+  transition: all 250ms ease;
+}
+
+.button:hover,
+.button:focus {
+  color: white;
+  background-color: teal;
+}
+
+.buttonName {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.image,
+.rateStat,
+.descr {
+  margin-bottom: 20px;
+}
+
+.infoHeading {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: teal;
+}
+
+.infoList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 250ms ease;
+}
+
+.infoItem:not(:last-child) {
+  margin-right: 50px;
+}
+
+.infoItem:hover,
+.infoItem:focus {
+  transform: scale(1.3);
+}
+
+.link {
+  color: rgb(129, 4, 4);
+  font-size: 25px;
+}
+
+.linkActive {
+  color: rgb(255, 0, 0);
+  text-decoration: underline;
+}
